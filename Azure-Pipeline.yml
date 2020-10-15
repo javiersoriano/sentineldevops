@@ -9,10 +9,10 @@ stages:
       - template: pipelines/steps.yml
         parameters:
           environment: Dev
-          azureSubscription: ''
-          WorkspaceName: '' # Enter the Azure Sentinel Workspace name
-          SubscriptionId: 'cd466daa-3528-481e-83f1-7a7148706287'
-          ResourceGroupName: ''
+          azureSubscription: 'Soricloud Visual Studio'
+          WorkspaceName: 'devsentinelsori' # Enter the Azure Sentinel Workspace name
+          SubscriptionId: '1186543f-81e7-4a2c-ad55-fae1cc1c9eac'
+          ResourceGroupName: 'customerB-dev'
           ResourceGroupLocation: 'westeurope'
           EnableSentinel: true
           analyticsRulesFile: SettingFiles/AlertRules.json # leave empty if you dont want to configure Analytic rules
@@ -30,10 +30,10 @@ stages:
       - template: pipelines/steps.yml
         parameters:
           environment: Staging
-          azureSubscription: ''
-          WorkspaceName: '' # Enter the Azure Sentinel Workspace name
-          SubscriptionId: 'cd466daa-3528-481e-83f1-7a7148706287'
-          ResourceGroupName: ''
+          azureSubscription: 'Soricloud Visual Studio'
+          WorkspaceName: 'stagesentinelsori' # Enter the Azure Sentinel Workspace name
+          SubscriptionId: '1186543f-81e7-4a2c-ad55-fae1cc1c9eac'
+          ResourceGroupName: 'customerA-prod'
           ResourceGroupLocation: 'westeurope'
           EnableSentinel: true
           analyticsRulesFile: SettingFiles/AlertRules.json # leave empty if you dont want to configure Analytic rules
@@ -51,11 +51,11 @@ stages:
       - template: pipelines/steps.yml
         parameters:
           environment: Production
-          azureSubscription: ''
-          WorkspaceName: ''  # Enter the Azure Sentinel Workspace name
-          SubscriptionId: 'cd466daa-3528-481e-83f1-7a7148706287'
-          ResourceGroupName: ''
-          ResourceGroupLocation: 'westeurope'
+          azureSubscription: 'Soricloud Visual Studio'
+          WorkspaceName: 'prodsentinelsori'  # Enter the Azure Sentinel Workspace name
+          SubscriptionId: '1186543f-81e7-4a2c-ad55-fae1cc1c9eac'
+          ResourceGroupName: 'production'
+          ResourceGroupLocation: 'northeurope'
           EnableSentinel: true
           analyticsRulesFile: SettingFiles/AlertRules.json # leave empty if you dont want to configure Analytic rules
           huntingRulesFile: SettingFiles/HuntingRules.json # leave empty if you dont want to configure Hunting rules
