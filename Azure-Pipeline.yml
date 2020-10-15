@@ -19,7 +19,7 @@ stages:
           huntingRulesFile: SettingFiles/HuntingRules.json # leave empty if you dont want to configure Hunting rules
           PlaybooksFolder: Playbooks/ # leave empty if you dont want to configure Playbooks
           ConnectorsFile: SettingFiles/DataConnectors.json # leave empty if you dont want to configure Connectors
-          WorkbooksFolder: Workbooks/
+          WorkbooksFolder: 
           WorkbookSourceId: '' # leave empty if you dont want to configure Workbook
 
   - stage: Staging
@@ -40,7 +40,7 @@ stages:
           huntingRulesFile: SettingFiles/HuntingRules.json # leave empty if you dont want to configure Hunting rules
           PlaybooksFolder: Playbooks/ # leave empty if you dont want to configure Playbooks
           ConnectorsFile: SettingFiles/DataConnectors.json # leave empty if you dont want to configure Connectors
-          WorkbooksFolder: Workbooks/
+          WorkbooksFolder: 
           WorkbookSourceId: '' # leave empty if you dont want to configure Workbook
 
   - stage: Production
@@ -61,5 +61,5 @@ stages:
           huntingRulesFile: SettingFiles/HuntingRules.json # leave empty if you dont want to configure Hunting rules
           PlaybooksFolder: Playbooks/ # leave empty if you dont want to configure Playbooks
           ConnectorsFile: SettingFiles/DataConnectors.json # leave empty if you dont want to configure Connectors
-          WorkbooksFolder: Workbooks/
+          WorkbooksFolder: 
           WorkbookSourceId: '' # leave empty if you dont want to configure Workbook
