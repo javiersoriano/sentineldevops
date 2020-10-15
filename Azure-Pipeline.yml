@@ -9,7 +9,7 @@ stages:
       - template: pipelines/steps.yml
         parameters:
           environment: Dev
-          azureSubscription: 'Soricloud Visual Studio'
+          azureSubscription: 'Soricloud'
           WorkspaceName: 'devsentinelsori' # Enter the Azure Sentinel Workspace name
           SubscriptionId: '1186543f-81e7-4a2c-ad55-fae1cc1c9eac'
           ResourceGroupName: 'customerB-dev'
@@ -30,7 +30,7 @@ stages:
       - template: pipelines/steps.yml
         parameters:
           environment: Staging
-          azureSubscription: 'Soricloud Visual Studio'
+          azureSubscription: 'Soricloud'
           WorkspaceName: 'stagesentinelsori' # Enter the Azure Sentinel Workspace name
           SubscriptionId: '1186543f-81e7-4a2c-ad55-fae1cc1c9eac'
           ResourceGroupName: 'customerA-prod'
@@ -51,7 +51,7 @@ stages:
       - template: pipelines/steps.yml
         parameters:
           environment: Production
-          azureSubscription: 'Soricloud Visual Studio'
+          azureSubscription: 'Soricloud'
           WorkspaceName: 'prodsentinelsori'  # Enter the Azure Sentinel Workspace name
           SubscriptionId: '1186543f-81e7-4a2c-ad55-fae1cc1c9eac'
           ResourceGroupName: 'production'
